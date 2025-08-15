@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="import" href="index.html">
+    <title>CLOSE TO REWARD🏆🏆</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    div{
+        margin: 10em;
+    }
+    #finish{
+        padding: 1em;
+    }
+</style>
+<body>
+    <div id="not">
+       <span id="con"><H1>WELCOME YOUNG HERO 👑👑 <br>YOUR GODESS IS WAITING🙇🙇</H1></span>
+        <!-- <h1>YOU WILL NEVER LEARN <br> But, still promise is a promise<br> wait for a while</h1> -->
+        <audio src="" alt="new" id="sound">hi</audio>
+        <img src="" id="img" alt="YOUR IMAGE WILL appear in 5 seconds after you click the button">
+    </div>
+</body>
+<script>
+    async function troll() {
+        let aud = document.getElementById("sound")
+        let img = document.getElementById("img")
+        setTimeout(() => {
+            let cnf = confirm("LAST CHANCE TO STOP🙇🙇💀💀")
+            if (cnf === true){
+                document.getElementById("not").innerText = "YOU HAVE TO SUCCEED IN ORDER TO GET MONEY💵💵🤑 AND ALSO WOMEN 😑😑😶‍🌫️🫡"
+            }
+            else{
+                let c = document.getElementById("con")
+                c.innerText = "YOU WILL NEVER LEARN But, still promise is a promise wait for a while"
+                let d = document.createElement("button")
+                d.innerHTML = "YOU ARE ONE CLICK AWAY..🏆🏆"
+                d.id = "finish"
+                c.style.fontSize = "xx-large"
+                c.appendChild(d)
+                d.addEventListener("click" , function(){
+                    setTimeout(() => {
+                    img.src = "images/troll.jpeg"
+                    aud.src = "spiderman-meme-song.mp3"
+                    aud.play()
+                }, 5000);
+                })
+            }
+        }, 3000);
+    }
+     async function starte(){
+        await troll()
+    }
+    starte()
+</script>
+</html>
